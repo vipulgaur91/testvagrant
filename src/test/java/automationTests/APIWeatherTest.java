@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import pageObjects.GetWeatherByCity;
+import utilities.Comparator;
 
 public class APIWeatherTest extends TestInitiator{
 
@@ -28,6 +29,13 @@ public class APIWeatherTest extends TestInitiator{
 		double tempapi = jsonRes.getDouble("main.temp");
 		logger.info("Temperature is: "+tempapi+"K");
 		TestInitiator.temp_api=tempapi;
+	}
+	
+	@Test(priority=2, dependsOnMethods = "getWeatherInformation", enabled=true, groups= "API")
+	public void compareAndVariance() throws IOException
+	{
+		String compareOutput = Comparator.compareTemp(TestInitiator.temp_ui, TestInitiator.temp_api);
+		logger.info(compareOutput);
 	}
 
 }

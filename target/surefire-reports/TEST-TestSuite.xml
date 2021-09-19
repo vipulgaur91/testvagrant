@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="109.582" tests="8" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="17.427" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\WORK\zulu8.56.0.21-ca-jdk8.0.302-win_x64\jre\bin"/>
     <property name="java.vm.version" value="25.302-b08"/>
     <property name="jdk.vendor.version" value="Zulu 8.56.0.21-CA-win64"/>
     <property name="java.vm.vendor" value="Azul Systems, Inc."/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\vipul.g.gaur\eclipse-workspace\com.practiceui.seleniumProj"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\vipul.g.gaur\eclipse-workspace\com.testvagrant.weather"/>
     <property name="java.vendor.url" value="http://www.azul.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\vipul.g.gaur\eclipse-workspace\com.practiceui.seleniumProj"/>
+    <property name="user.dir" value="C:\Users\vipul.g.gaur\eclipse-workspace\com.testvagrant.weather"/>
     <property name="java.runtime.version" value="1.8.0_302-b08"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\WORK\zulu8.56.0.21-ca-jdk8.0.302-win_x64\jre\lib\endorsed"/>
@@ -64,43 +64,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="clickOnCustomerServiceAndNavigateToHelpPage" classname="automationTests.HelpPageTest" time="10.145"/>
-  <testcase name="searchSolutionAndVerifyResultsOnHelpPage" classname="automationTests.HelpPageTest" time="41.187">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div/h1[contains(text(),&apos;Help Search Results&apos;)]&quot;}&#10;  (Session info: chrome=93.0.4577.82)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;&#10;System info: host: &apos;IN-D6X7TT2&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_302&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\VIPULG~1.GAU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53246}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 906d05a16e1af48d0a16a09686574bdd&#10;*** Element info: {Using=xpath, value=//div/h1[contains(text(),&apos;Help Search Results&apos;)]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//div/h1[contains(text(),'Help Search Results')]"}
-  (Session info: chrome=93.0.4577.82)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
-System info: host: 'IN-D6X7TT2', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_302'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\VIPULG~1.GAU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53246}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 906d05a16e1af48d0a16a09686574bdd
-*** Element info: {Using=xpath, value=//div/h1[contains(text(),'Help Search Results')]}
-	at automationTests.HelpPageTest.searchSolutionAndVerifyResultsOnHelpPage(HelpPageTest.java:36)
-</failure>
-    <system-err><![CDATA[Starting ChromeDriver 93.0.4577.63 (ff5c0da2ec0adeaed5550e6c7e98417dac77d98a-refs/branch-heads/4577@{#1135}) on port 12531
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Sep 15, 2021 10:36:26 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="changeHomePageLanguage" classname="automationTests.HomePageTest" time="5.619"/>
-  <testcase name="enterPincode" classname="automationTests.HomePageTest" time="7.488"/>
-  <testcase name="validateSearchResultsForValidSearchQuery" classname="automationTests.HomePageTest" time="2.112"/>
-  <testcase name="verifyHomePage" classname="automationTests.HomePageTest" time="0.052"/>
-  <testcase name="navigateToJobsPageAndViewJobsInStudentProgrammes" classname="automationTests.JobsPageTest" time="0.373">
-    <failure message="expected [Amazon.jobs: Help us build Earth’s most customer-centric company.] but found [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Amazon.jobs: Help us build Earth’s most customer-centric company.] but found [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in]
-	at automationTests.JobsPageTest.navigateToJobsPageAndViewJobsInStudentProgrammes(JobsPageTest.java:17)
-</failure>
-    <system-err><![CDATA[Starting ChromeDriver 93.0.4577.63 (ff5c0da2ec0adeaed5550e6c7e98417dac77d98a-refs/branch-heads/4577@{#1135}) on port 7302
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Sep 15, 2021 10:37:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="testLoginWithInvalidCredentials" classname="automationTests.LoginPageTest" time="4.636"/>
+  <testcase name="validateSearchResultsForValidCitySearch" classname="automationTests.HomePageTest" time="2.695"/>
+  <testcase name="getWeatherInformation" classname="automationTests.APIWeatherTest" time="1.688"/>
+  <testcase name="compareAndVariance" classname="automationTests.APIWeatherTest" time="0.002"/>
 </testsuite>
